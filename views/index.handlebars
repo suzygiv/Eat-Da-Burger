@@ -1,56 +1,47 @@
+  
 <div class="container">
+
   <div class="row">
     <div class="col-12">
       <div class="mx-auto" style="width:256px">
         <img src="assets/hiclipart.com.png" />
       </div>
-        <h1 class="text-center">Eat da Burger!</h1>
-      
+        <h1 class="text-center">Eat da Burger!</h1> 
     </div>
-
   </div>
-  <h2>Available Burgers</h2>
-    <div class="col-6">
-      <div class="row">
+
+  <div class="burgers">
+    <h2><i class="fas fa-hamburger"></i> Available Burgers:</h2>
+
+    <ul>
         {{#each burgers}}
-          {{#unless devoured}}
-            <div class="col-6 padding-10">
-              <div class="uneaten">{{burger_name}}</div>
-            </div>
-            
-            <div class="col-6 padding-10">
-              <button class="eat btn btn-warning" data-id="{{id}}">Devour!</button>
-            </div>
-          {{/unless}}
+        {{#unless devoured}}
+        {{> burger/burger-block devoured=false}}
+        {{/unless}}
         {{/each}}
-        
-      </div>
-    </div>
-
-<h2>Devoured</h2>
-    <div class="col-6">
-      <div class="row">
-        <div class="eaten">
-          {{#each burgers}}
-            {{#if devoured}}
-              <div class="col-12">
-                {{burger_name}}
-              </div>
-            {{/if}}
-          {{/each}}
-        </div>
-      </div>     
-    </div>
-    </div>
-  
+    </ul>
   </div>
+
+  <div class="devoured">
+    <h2><i class="fas fa-hamburger"></i> Devoured Burgers:</h2>
+  <div class="eaten">
+    <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burger/burger-block devoured=true}}
+        {{/if}}
+        {{/each}}
+    </ul>
+  </div>
+  </div>
+
 
   <div class="row" style="padding-top: 50px">
     <div class="col-12">
 
-        <h3 class="text-center">Add a burger you want to eat:</h3>
+      <h3 class="text-center">Add a burger:</h3>
 
-        <form>
+        <form class="create-form">
           <div class="form-row align-items-center">
             <div class="col-6 offset-3">
               <input class="form-control" type="text" id="burger-name-input" placeholder="Enter Burger Name">
@@ -63,4 +54,4 @@
 
     </div>
   </div>
-
+</div>
