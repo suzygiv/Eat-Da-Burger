@@ -21,7 +21,7 @@
 - [GitHub Info](#GitHub) 
 
 ## Installation
-    `npm install inquirer` `npm install mysql` `npm install dotenv` `npm install console.table`
+    `npm install inquirer` `npm install mysql` `npm install dotenv` 
 
 ## Usage
 Run the following command at the root of your project and answer the prompted questions:
@@ -30,19 +30,16 @@ Run the following command at the root of your project and answer the prompted qu
 
 ## Screenshots
 
-![Departments](https://github.com/suzygiv/Employee-Tracker/blob/main/Assets/Departments.PNG)
+![Departments]
 
-![Employees](https://github.com/suzygiv/Employee-Tracker/blob/main/Assets/Employees.PNG)
+![Employees]
 
-![Roles](https://github.com/suzygiv/Employee-Tracker/blob/main/Assets/Roles.PNG)
+![Roles]
 
 ## Heroku 
 
-Below is a walkthrough video that demonstrates the entirety of the application's functionality.
 
-![README gif](https://github.com/suzygiv/Employee-Tracker/blob/main/Assets/Employee%20Tracker%20gif%20(1).gif)
 
-To view the entire walkthrough video, click here: https://drive.google.com/file/d/1Xu7_E_Jr_oc-kL5A1rCKI31xW_M2lbut/view?usp=sharing
 
 ## Licence
 ![License](https://img.shields.io/badge/License-mit-blue.svg "License Badge")
