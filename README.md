@@ -37,8 +37,7 @@ Run the following command at the root of your project and answer the prompted qu
 ![Roles]
 
 ## Heroku 
-
-
+To view the Eat-Da-Burger application, click below:
 
 
 ## Licence
