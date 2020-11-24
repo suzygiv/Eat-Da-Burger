@@ -27,6 +27,10 @@
 Run the following command at the root of your project and answer the prompted questions:
 
     `node server.js`
+    
+Once 'App listening on PORT: 8080' displays in your terminal, open your browser and search:
+
+`http://localhost:8080/`
 
 ## Screenshots
 
