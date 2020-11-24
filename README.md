@@ -30,11 +30,11 @@ Run the following command at the root of your project and answer the prompted qu
 
 ## Screenshots
 
-![Departments]
+![Eat-Da-Burger](https://github.com/suzygiv/Eat-Da-Burger/blob/main/public/assets/images/Eat-Da-Burger.PNG)
 
-![Employees]
+![Available-Burgers](https://github.com/suzygiv/Eat-Da-Burger/blob/main/public/assets/images/Available-Burgers.PNG)
 
-![Roles]
+
 
 ## Heroku 
 To view the Eat-Da-Burger application, click below:
