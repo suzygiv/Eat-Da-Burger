@@ -1,10 +1,8 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 var connection;
-require('dotenv').config
 
 if (process.env.JAWSDB_URL) {
-    // connect to JawsDB (heroku)
     connection = mysql.createConnection(process.env.JAWSDB_URL);
   } else {
     connection = mysql.createConnection({
@@ -13,7 +11,8 @@ if (process.env.JAWSDB_URL) {
         user: "root",
         password: process.env.DB_PASSWORD,
         database: "burgers_db"
-});
+    });
+  };
 
 // Make connection.
 connection.connect(function (err) {
