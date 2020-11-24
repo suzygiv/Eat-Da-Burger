@@ -21,7 +21,7 @@
 - [GitHub Info](#GitHub) 
 
 ## Installation
-    `npm install inquirer` `npm install mysql` `npm install dotenv` 
+    `npm install dotenv` `npm install express` `npm install express-handlebars` `npm install mysql`  
 
 ## Usage
 Run the following command at the root of your project and answer the prompted questions:
@@ -39,7 +39,7 @@ Run the following command at the root of your project and answer the prompted qu
 
 
 ## Heroku 
-To view the Eat-Da-Burger application, click below:
+To view the Eat-Da-Burger application, click here:
 https://suzy-eat-da-burger.herokuapp.com/
 
 ## Licence
