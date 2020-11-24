@@ -1,46 +1,38 @@
-$(function() {
-  $(".devour").on("click", function(event) {
-    var id = $(this).data("id");
-    var justDevoured = $(this).data("justdevoured");
+$(document).on("click", ".devourBtn", function () {
+  var id = $(this).data("id");
+  var newDevour = $(this).data("devour");
 
-    var justDevouredState = {
-      devoured:justDevoured
-    };
+  var newDevourState = {
+      devoured: newDevour
+  }
 
-    // Send the PUT request.
-    $.ajax("/api/burgers/" + id, {
+  $.ajax(`/api/burgers/${id}`, {
       type: "PUT",
-      data: justDevouredState
-    }).then(
-      function() {
-        console.log("changed eaten state to", justDevoured);
-        // Reload the page to get the updated list
-        location.reload();
+      data: newDevourState
+  }).then(
+      function () {
+          console.log("changed devoured to", newDevour);
+          location.reload();
       }
-    );
-  });
+  )
 
-  $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
-    event.preventDefault();
+})
 
-    var newBurger = {
-      burger_name: $("#burger-name-input").val().trim()
-    };
-
-    // Send the POST request.
-    $.ajax("/api/burgers", {
-      type: "POST",
-      data: newBurger
-    }).then(
-      function() {
-        console.log("created new burger");
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-  });
-
- 
-
+$(document).ready(function () {
+  $(".create-form").on("submit", function (event) {
+      event.preventDefault();
+      var newBurger = {
+          burger_name: $("#burger-name-input").val().trim(),
+          devoured: false
+      };
+      $.ajax("/api/burgers", {
+          type: "POST",
+          data: newBurger
+      }).then(
+          function () {
+              console.log("created new burger");
+              location.reload();
+          }
+      )
+  })
 });

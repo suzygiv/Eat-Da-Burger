@@ -1,11 +1,32 @@
-  
-.padding-10{
-  padding: 10px;
+
+header {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 100px;
 }
 
+.burgers {
+  font-family: 'Sue Ellen Francisco', cursive;
+}
 
-.eaten{
+.devoured {
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+.uneaten {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.eaten {
   text-decoration: line-through;
   font-style: italic;
   color: gray
 }
+
+.addBurger {
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+
+
