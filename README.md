@@ -1,5 +1,7 @@
 # Eat-Da-Burger
 
+![License](https://img.shields.io/badge/License-mit-blue.svg "License Badge")
+
 ## Description
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
